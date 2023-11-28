@@ -1,0 +1,11 @@
+# ignore all input files
+input.txt
+
+# but not the day00 input file
+!day00/input.txt
+
+# Unit test / coverage reports
+.pytest_cache/
+
+# Environments
+venv/
