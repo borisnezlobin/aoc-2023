@@ -5,12 +5,9 @@ INPUT_TXT = os.path.join(os.path.dirname(__file__), 'input.txt')
 
 def solve(s: str) -> int:
     lines = s.splitlines()
-    for line in lines:
-        print(line)
-    # TODO: implement solution here!
+    # code
     return 0
 
-# TODO: change for the small example given
 INPUT_S = '''\
 
 '''
@@ -23,7 +20,7 @@ def test() -> None:
 
 def main() -> int:
     with open(INPUT_TXT) as f:
-        print(solve(f.read()))
+        solve(f.read())
     return 0
 
 
