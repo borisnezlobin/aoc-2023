@@ -2,6 +2,8 @@ import os.path
 
 INPUT_TXT = os.path.join(os.path.dirname(__file__), 'input.txt')
 
+# 619902767 648714498 3762874676 148318192 1545670780 343889780 4259893555 6139816 3980757676 20172062 2199623551 196958359
+
 
 def solve(s: str) -> int:
     lines = s.splitlines()
