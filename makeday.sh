@@ -23,5 +23,5 @@ mkdir $DIR
 # copy from day00
 cp day00/input.txt $DIR/
 cp day00/*.py $DIR/
-# create part2 duplicate
+cp day00/fake_input.txt $DIR/
 cp day00/part1.py $DIR/part2.py
