@@ -3,13 +3,27 @@ import os.path
 INPUT_TXT = os.path.join(os.path.dirname(__file__), 'input.txt')
 
 
+def HASH(s: str) -> int:
+    h = 0
+    for c in s:
+        # get ascii value of c
+        ascii = ord(c)
+        print(ascii, c)
+        h += ascii
+        h *= 17
+        h = h % 256
+
+    return h
+
 def solve(s: str) -> int:
-    lines = s.splitlines()
+    nums = s.splitlines()[0].split(',')
+
     sum = 0
-    for i in range(len(lines)):
-        line = lines[i]
-        springs = line.split(' ')[0].split()
-        broken = lines[i].split(' ')[1].split(',')
+    for num in nums:
+        sum += HASH(num)
+    
+    print(sum)
+    
     return 0
 
 INPUT_S = '''\
