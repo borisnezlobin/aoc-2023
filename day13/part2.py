@@ -5,11 +5,7 @@ INPUT_TXT = os.path.join(os.path.dirname(__file__), 'input.txt')
 
 def solve(s: str) -> int:
     lines = s.splitlines()
-    sum = 0
-    for i in range(len(lines)):
-        line = lines[i]
-        springs = line.split(' ')[0].split()
-        broken = lines[i].split(' ')[1].split(',')
+    # code
     return 0
 
 INPUT_S = '''\
